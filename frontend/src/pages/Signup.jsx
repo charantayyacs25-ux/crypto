@@ -11,7 +11,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/signup", formData);
+      await axios.post("https://crypto-a3qy.onrender.com/signup", formData);
       alert("Signup successful! Now login.");
       navigate("/login"); // Redirect to login page
     } catch (err) {
